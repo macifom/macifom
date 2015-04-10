@@ -20,4 +20,4 @@ I am working to extend Macifom's emulation and debugging capabilities with the f
  
 ## About our License
 
-The Macifom sources are distributed under the MIT License, but embeds Shay Green's Nes_snd_emu library which is licensed under the GNU LGPL. See http://www.slack.net/~ant/libs/audio.html for details and visit http://www.gnu.org/licenses/lgpl.html for a copy of the LGPL License.
+Macifom is provided under the MIT License, but embeds Shay Green's Nes_snd_emu library which is licensed under the GNU LGPL. See http://www.slack.net/~ant/libs/audio.html for details and visit http://www.gnu.org/licenses/lgpl.html for a copy of the LGPL License.
