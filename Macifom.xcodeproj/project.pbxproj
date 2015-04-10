@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		B90C0F9B1205FDDC00499BEB /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90C0F9A1205FDDC00499BEB /* IOKit.framework */; };
+		B91B201B122640A10066C2CB /* NESSUROMCartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B91B201A122640A10066C2CB /* NESSUROMCartridge.m */; };
+		B91C4F4510F876580057E78E /* apu_snapshot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B91C4F2C10F876580057E78E /* apu_snapshot.cpp */; };
+		B91C4F4610F876580057E78E /* Blip_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B91C4F3010F876580057E78E /* Blip_Buffer.cpp */; };
+		B91C4F4710F876580057E78E /* Multi_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B91C4F3710F876580057E78E /* Multi_Buffer.cpp */; };
+		B91C4F4810F876580057E78E /* Nes_Apu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B91C4F3910F876580057E78E /* Nes_Apu.cpp */; };
+		B91C4F4910F876580057E78E /* Nes_Namco.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B91C4F3B10F876580057E78E /* Nes_Namco.cpp */; };
+		B91C4F4A10F876580057E78E /* Nes_Oscs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B91C4F3D10F876580057E78E /* Nes_Oscs.cpp */; };
+		B91C4F4B10F876580057E78E /* Nes_Vrc6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B91C4F3F10F876580057E78E /* Nes_Vrc6.cpp */; };
+		B91C4F4C10F876580057E78E /* Nonlinear_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B91C4F4110F876580057E78E /* Nonlinear_Buffer.cpp */; };
+		B91C4F5410F876E00057E78E /* NESAPUEmulator.mm in Sources */ = {isa = PBXBuildFile; fileRef = B91C4F5310F876E00057E78E /* NESAPUEmulator.mm */; };
+		B91C50A410F8A2C10057E78E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91C50A210F8A2C10057E78E /* AudioToolbox.framework */; };
+		B91C50A510F8A2C10057E78E /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91C50A310F8A2C10057E78E /* CoreAudio.framework */; };
+		B91FBEF6142BA5EA006A3040 /* NESiNES184Cartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B91FBEF5142BA5EA006A3040 /* NESiNES184Cartridge.m */; };
+		B926BD8112147CC20046785C /* NESControllerInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = B926BD8012147CC20046785C /* NESControllerInterface.m */; };
+		B926BF171214B75E0046785C /* NESKeyboardResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = B926BF161214B75E0046785C /* NESKeyboardResponder.m */; };
+		B92A4FF1142E6AF900BE811B /* NESVRC2aCartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B92A4FF0142E6AF900BE811B /* NESVRC2aCartridge.m */; };
+		B96B196C122505E00096FEF6 /* NESTxROMCartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B96B196B122505E00096FEF6 /* NESTxROMCartridge.m */; };
+		B96DD5271538E92B00D3A9CC /* NESiNES068Cartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B96DD5261538E92B00D3A9CC /* NESiNES068Cartridge.m */; };
+		B9809557142FADEF00195D48 /* NESVRC1Cartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B9809556142FADEF00195D48 /* NESVRC1Cartridge.m */; };
+		B99E78F00E745E280019B353 /* NESPPUEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = B99E78E90E745E270019B353 /* NESPPUEmulator.m */; };
+		B99E78F10E745E280019B353 /* NES6502Interpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = B99E78EB0E745E270019B353 /* NES6502Interpreter.m */; };
+		B99E78F30E745E280019B353 /* NESCartridgeEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = B99E78EE0E745E280019B353 /* NESCartridgeEmulator.m */; };
+		B99E79120E745EFC0019B353 /* NESApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B99E79110E745EFC0019B353 /* NESApplicationController.m */; };
+		B99E791A0E7462220019B353 /* NESPlayfieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = B99E79190E7462220019B353 /* NESPlayfieldView.m */; };
+		B9A27E7C1222074400582233 /* NESCartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A27E7B1222074400582233 /* NESCartridge.m */; };
+		B9A27E7F12221F2600582233 /* NESUxROMCartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A27E7E12221F2600582233 /* NESUxROMCartridge.m */; };
+		B9A27E83122224DF00582233 /* NESCNROMCartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A27E82122224DF00582233 /* NESCNROMCartridge.m */; };
+		B9A27E8612222BB700582233 /* NESAxROMCartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A27E8512222BB700582233 /* NESAxROMCartridge.m */; };
+		B9A27E891222499C00582233 /* NESSxROMCartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A27E881222499C00582233 /* NESSxROMCartridge.m */; };
+		B9ACB554142D37520054018C /* NESVRC2bCartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B9ACB553142D37520054018C /* NESVRC2bCartridge.m */; };
+		B9D02A7C0F36269F003A44CC /* Macifom.icns in Resources */ = {isa = PBXBuildFile; fileRef = B9D02A7B0F36269F003A44CC /* Macifom.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* Macifom_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macifom_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Macifom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macifom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B90C0F9A1205FDDC00499BEB /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		B91B2019122640A10066C2CB /* NESSUROMCartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESSUROMCartridge.h; sourceTree = "<group>"; };
+		B91B201A122640A10066C2CB /* NESSUROMCartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESSUROMCartridge.m; sourceTree = "<group>"; };
+		B91C4F2C10F876580057E78E /* apu_snapshot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = apu_snapshot.cpp; sourceTree = "<group>"; };
+		B91C4F2D10F876580057E78E /* apu_snapshot.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = apu_snapshot.h; sourceTree = "<group>"; };
+		B91C4F2E10F876580057E78E /* blargg_common.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = blargg_common.h; sourceTree = "<group>"; };
+		B91C4F2F10F876580057E78E /* blargg_source.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = blargg_source.h; sourceTree = "<group>"; };
+		B91C4F3010F876580057E78E /* Blip_Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Blip_Buffer.cpp; sourceTree = "<group>"; };
+		B91C4F3110F876580057E78E /* Blip_Buffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Blip_Buffer.h; sourceTree = "<group>"; };
+		B91C4F3210F876580057E78E /* Blip_Synth.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Blip_Synth.h; sourceTree = "<group>"; };
+		B91C4F3410F876580057E78E /* config.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = config.hpp; sourceTree = "<group>"; };
+		B91C4F3510F876580057E78E /* cstdint.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cstdint.hpp; sourceTree = "<group>"; };
+		B91C4F3610F876580057E78E /* static_assert.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = static_assert.hpp; sourceTree = "<group>"; };
+		B91C4F3710F876580057E78E /* Multi_Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Multi_Buffer.cpp; sourceTree = "<group>"; };
+		B91C4F3810F876580057E78E /* Multi_Buffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Multi_Buffer.h; sourceTree = "<group>"; };
+		B91C4F3910F876580057E78E /* Nes_Apu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Nes_Apu.cpp; sourceTree = "<group>"; };
+		B91C4F3A10F876580057E78E /* Nes_Apu.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Nes_Apu.h; sourceTree = "<group>"; };
+		B91C4F3B10F876580057E78E /* Nes_Namco.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Nes_Namco.cpp; sourceTree = "<group>"; };
+		B91C4F3C10F876580057E78E /* Nes_Namco.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Nes_Namco.h; sourceTree = "<group>"; };
+		B91C4F3D10F876580057E78E /* Nes_Oscs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Nes_Oscs.cpp; sourceTree = "<group>"; };
+		B91C4F3E10F876580057E78E /* Nes_Oscs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Nes_Oscs.h; sourceTree = "<group>"; };
+		B91C4F3F10F876580057E78E /* Nes_Vrc6.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Nes_Vrc6.cpp; sourceTree = "<group>"; };
+		B91C4F4010F876580057E78E /* Nes_Vrc6.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Nes_Vrc6.h; sourceTree = "<group>"; };
+		B91C4F4110F876580057E78E /* Nonlinear_Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Nonlinear_Buffer.cpp; sourceTree = "<group>"; };
+		B91C4F4210F876580057E78E /* Nonlinear_Buffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Nonlinear_Buffer.h; sourceTree = "<group>"; };
+		B91C4F5210F876E00057E78E /* NESAPUEmulator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = NESAPUEmulator.h; sourceTree = "<group>"; };
+		B91C4F5310F876E00057E78E /* NESAPUEmulator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NESAPUEmulator.mm; sourceTree = "<group>"; };
+		B91C50A210F8A2C10057E78E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+		B91C50A310F8A2C10057E78E /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = /System/Library/Frameworks/CoreAudio.framework; sourceTree = "<absolute>"; };
+		B91FBEF4142BA5EA006A3040 /* NESiNES184Cartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESiNES184Cartridge.h; sourceTree = "<group>"; };
+		B91FBEF5142BA5EA006A3040 /* NESiNES184Cartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESiNES184Cartridge.m; sourceTree = "<group>"; };
+		B926BD7F12147CC20046785C /* NESControllerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESControllerInterface.h; sourceTree = "<group>"; };
+		B926BD8012147CC20046785C /* NESControllerInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESControllerInterface.m; sourceTree = "<group>"; };
+		B926BF151214B75E0046785C /* NESKeyboardResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESKeyboardResponder.h; sourceTree = "<group>"; };
+		B926BF161214B75E0046785C /* NESKeyboardResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESKeyboardResponder.m; sourceTree = "<group>"; };
+		B92A4FEF142E6AF900BE811B /* NESVRC2aCartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESVRC2aCartridge.h; sourceTree = "<group>"; };
+		B92A4FF0142E6AF900BE811B /* NESVRC2aCartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESVRC2aCartridge.m; sourceTree = "<group>"; };
+		B96B196A122505E00096FEF6 /* NESTxROMCartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESTxROMCartridge.h; sourceTree = "<group>"; };
+		B96B196B122505E00096FEF6 /* NESTxROMCartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESTxROMCartridge.m; sourceTree = "<group>"; };
+		B96DD5251538E92B00D3A9CC /* NESiNES068Cartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESiNES068Cartridge.h; sourceTree = "<group>"; };
+		B96DD5261538E92B00D3A9CC /* NESiNES068Cartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESiNES068Cartridge.m; sourceTree = "<group>"; };
+		B9809555142FADEF00195D48 /* NESVRC1Cartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESVRC1Cartridge.h; sourceTree = "<group>"; };
+		B9809556142FADEF00195D48 /* NESVRC1Cartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESVRC1Cartridge.m; sourceTree = "<group>"; };
+		B99E78E80E745E270019B353 /* NES6502Interpreter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NES6502Interpreter.h; sourceTree = "<group>"; };
+		B99E78E90E745E270019B353 /* NESPPUEmulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESPPUEmulator.m; sourceTree = "<group>"; };
+		B99E78EB0E745E270019B353 /* NES6502Interpreter.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = NES6502Interpreter.m; sourceTree = "<group>"; };
+		B99E78ED0E745E270019B353 /* NESPPUEmulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESPPUEmulator.h; sourceTree = "<group>"; };
+		B99E78EE0E745E280019B353 /* NESCartridgeEmulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESCartridgeEmulator.m; sourceTree = "<group>"; };
+		B99E78EF0E745E280019B353 /* NESCartridgeEmulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESCartridgeEmulator.h; sourceTree = "<group>"; };
+		B99E79100E745EFC0019B353 /* NESApplicationController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = NESApplicationController.h; sourceTree = "<group>"; };
+		B99E79110E745EFC0019B353 /* NESApplicationController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = NESApplicationController.m; sourceTree = "<group>"; };
+		B99E79180E7462220019B353 /* NESPlayfieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESPlayfieldView.h; sourceTree = "<group>"; };
+		B99E79190E7462220019B353 /* NESPlayfieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESPlayfieldView.m; sourceTree = "<group>"; };
+		B9A27E7A1222074400582233 /* NESCartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESCartridge.h; sourceTree = "<group>"; };
+		B9A27E7B1222074400582233 /* NESCartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESCartridge.m; sourceTree = "<group>"; };
+		B9A27E7D12221F2600582233 /* NESUxROMCartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESUxROMCartridge.h; sourceTree = "<group>"; };
+		B9A27E7E12221F2600582233 /* NESUxROMCartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESUxROMCartridge.m; sourceTree = "<group>"; };
+		B9A27E81122224DF00582233 /* NESCNROMCartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESCNROMCartridge.h; sourceTree = "<group>"; };
+		B9A27E82122224DF00582233 /* NESCNROMCartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESCNROMCartridge.m; sourceTree = "<group>"; };
+		B9A27E8412222BB700582233 /* NESAxROMCartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESAxROMCartridge.h; sourceTree = "<group>"; };
+		B9A27E8512222BB700582233 /* NESAxROMCartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESAxROMCartridge.m; sourceTree = "<group>"; };
+		B9A27E871222499C00582233 /* NESSxROMCartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESSxROMCartridge.h; sourceTree = "<group>"; };
+		B9A27E881222499C00582233 /* NESSxROMCartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESSxROMCartridge.m; sourceTree = "<group>"; };
+		B9ACB552142D37510054018C /* NESVRC2bCartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESVRC2bCartridge.h; sourceTree = "<group>"; };
+		B9ACB553142D37520054018C /* NESVRC2bCartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESVRC2bCartridge.m; sourceTree = "<group>"; };
+		B9D02A7B0F36269F003A44CC /* Macifom.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Macifom.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				B91C50A410F8A2C10057E78E /* AudioToolbox.framework in Frameworks */,
+				B91C50A510F8A2C10057E78E /* CoreAudio.framework in Frameworks */,
+				B90C0F9B1205FDDC00499BEB /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B9E11C181225BD1400F6FA0E /* Cartridges */,
+				B99E79100E745EFC0019B353 /* NESApplicationController.h */,
+				B99E79110E745EFC0019B353 /* NESApplicationController.m */,
+				B99E78E80E745E270019B353 /* NES6502Interpreter.h */,
+				B99E78EB0E745E270019B353 /* NES6502Interpreter.m */,
+				B99E78ED0E745E270019B353 /* NESPPUEmulator.h */,
+				B99E78E90E745E270019B353 /* NESPPUEmulator.m */,
+				B99E78EF0E745E280019B353 /* NESCartridgeEmulator.h */,
+				B99E78EE0E745E280019B353 /* NESCartridgeEmulator.m */,
+				B99E79180E7462220019B353 /* NESPlayfieldView.h */,
+				B99E79190E7462220019B353 /* NESPlayfieldView.m */,
+				B91C4F5210F876E00057E78E /* NESAPUEmulator.h */,
+				B91C4F5310F876E00057E78E /* NESAPUEmulator.mm */,
+				B926BD7F12147CC20046785C /* NESControllerInterface.h */,
+				B926BD8012147CC20046785C /* NESControllerInterface.m */,
+				B926BF151214B75E0046785C /* NESKeyboardResponder.h */,
+				B926BF161214B75E0046785C /* NESKeyboardResponder.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B90C0F9A1205FDDC00499BEB /* IOKit.framework */,
+				B91C50A210F8A2C10057E78E /* AudioToolbox.framework */,
+				B91C50A310F8A2C10057E78E /* CoreAudio.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Macifom.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Macifom */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Macifom;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B91C4F2B10F876580057E78E /* nes_apu */,
+				32CA4F630368D1EE00C91783 /* Macifom_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B9D02A7B0F36269F003A44CC /* Macifom.icns */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B91C4F2B10F876580057E78E /* nes_apu */ = {
+			isa = PBXGroup;
+			children = (
+				B91C4F2C10F876580057E78E /* apu_snapshot.cpp */,
+				B91C4F2D10F876580057E78E /* apu_snapshot.h */,
+				B91C4F2E10F876580057E78E /* blargg_common.h */,
+				B91C4F2F10F876580057E78E /* blargg_source.h */,
+				B91C4F3010F876580057E78E /* Blip_Buffer.cpp */,
+				B91C4F3110F876580057E78E /* Blip_Buffer.h */,
+				B91C4F3210F876580057E78E /* Blip_Synth.h */,
+				B91C4F3310F876580057E78E /* boost */,
+				B91C4F3710F876580057E78E /* Multi_Buffer.cpp */,
+				B91C4F3810F876580057E78E /* Multi_Buffer.h */,
+				B91C4F3910F876580057E78E /* Nes_Apu.cpp */,
+				B91C4F3A10F876580057E78E /* Nes_Apu.h */,
+				B91C4F3B10F876580057E78E /* Nes_Namco.cpp */,
+				B91C4F3C10F876580057E78E /* Nes_Namco.h */,
+				B91C4F3D10F876580057E78E /* Nes_Oscs.cpp */,
+				B91C4F3E10F876580057E78E /* Nes_Oscs.h */,
+				B91C4F3F10F876580057E78E /* Nes_Vrc6.cpp */,
+				B91C4F4010F876580057E78E /* Nes_Vrc6.h */,
+				B91C4F4110F876580057E78E /* Nonlinear_Buffer.cpp */,
+				B91C4F4210F876580057E78E /* Nonlinear_Buffer.h */,
+			);
+			path = nes_apu;
+			sourceTree = "<group>";
+		};
+		B91C4F3310F876580057E78E /* boost */ = {
+			isa = PBXGroup;
+			children = (
+				B91C4F3410F876580057E78E /* config.hpp */,
+				B91C4F3510F876580057E78E /* cstdint.hpp */,
+				B91C4F3610F876580057E78E /* static_assert.hpp */,
+			);
+			path = boost;
+			sourceTree = "<group>";
+		};
+		B9E11C181225BD1400F6FA0E /* Cartridges */ = {
+			isa = PBXGroup;
+			children = (
+				B9A27E7A1222074400582233 /* NESCartridge.h */,
+				B9A27E7B1222074400582233 /* NESCartridge.m */,
+				B9A27E7D12221F2600582233 /* NESUxROMCartridge.h */,
+				B9A27E7E12221F2600582233 /* NESUxROMCartridge.m */,
+				B9A27E81122224DF00582233 /* NESCNROMCartridge.h */,
+				B9A27E82122224DF00582233 /* NESCNROMCartridge.m */,
+				B9A27E8412222BB700582233 /* NESAxROMCartridge.h */,
+				B9A27E8512222BB700582233 /* NESAxROMCartridge.m */,
+				B9A27E871222499C00582233 /* NESSxROMCartridge.h */,
+				B9A27E881222499C00582233 /* NESSxROMCartridge.m */,
+				B96B196A122505E00096FEF6 /* NESTxROMCartridge.h */,
+				B96B196B122505E00096FEF6 /* NESTxROMCartridge.m */,
+				B91B2019122640A10066C2CB /* NESSUROMCartridge.h */,
+				B91B201A122640A10066C2CB /* NESSUROMCartridge.m */,
+				B91FBEF4142BA5EA006A3040 /* NESiNES184Cartridge.h */,
+				B91FBEF5142BA5EA006A3040 /* NESiNES184Cartridge.m */,
+				B9ACB552142D37510054018C /* NESVRC2bCartridge.h */,
+				B9ACB553142D37520054018C /* NESVRC2bCartridge.m */,
+				B92A4FEF142E6AF900BE811B /* NESVRC2aCartridge.h */,
+				B92A4FF0142E6AF900BE811B /* NESVRC2aCartridge.m */,
+				B9809555142FADEF00195D48 /* NESVRC1Cartridge.h */,
+				B9809556142FADEF00195D48 /* NESVRC1Cartridge.m */,
+				B96DD5251538E92B00D3A9CC /* NESiNES068Cartridge.h */,
+				B96DD5261538E92B00D3A9CC /* NESiNES068Cartridge.m */,
+			);
+			name = Cartridges;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Macifom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Macifom" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Macifom;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Macifom;
+			productReference = 8D1107320486CEB800E47090 /* Macifom.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Macifom" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Macifom */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Macifom */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				B9D02A7C0F36269F003A44CC /* Macifom.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				B99E78F00E745E280019B353 /* NESPPUEmulator.m in Sources */,
+				B99E78F10E745E280019B353 /* NES6502Interpreter.m in Sources */,
+				B99E78F30E745E280019B353 /* NESCartridgeEmulator.m in Sources */,
+				B99E79120E745EFC0019B353 /* NESApplicationController.m in Sources */,
+				B99E791A0E7462220019B353 /* NESPlayfieldView.m in Sources */,
+				B91C4F4510F876580057E78E /* apu_snapshot.cpp in Sources */,
+				B91C4F4610F876580057E78E /* Blip_Buffer.cpp in Sources */,
+				B91C4F4710F876580057E78E /* Multi_Buffer.cpp in Sources */,
+				B91C4F4810F876580057E78E /* Nes_Apu.cpp in Sources */,
+				B91C4F4910F876580057E78E /* Nes_Namco.cpp in Sources */,
+				B91C4F4A10F876580057E78E /* Nes_Oscs.cpp in Sources */,
+				B91C4F4B10F876580057E78E /* Nes_Vrc6.cpp in Sources */,
+				B91C4F4C10F876580057E78E /* Nonlinear_Buffer.cpp in Sources */,
+				B91C4F5410F876E00057E78E /* NESAPUEmulator.mm in Sources */,
+				B926BD8112147CC20046785C /* NESControllerInterface.m in Sources */,
+				B926BF171214B75E0046785C /* NESKeyboardResponder.m in Sources */,
+				B9A27E7C1222074400582233 /* NESCartridge.m in Sources */,
+				B9A27E7F12221F2600582233 /* NESUxROMCartridge.m in Sources */,
+				B9A27E83122224DF00582233 /* NESCNROMCartridge.m in Sources */,
+				B9A27E8612222BB700582233 /* NESAxROMCartridge.m in Sources */,
+				B9A27E891222499C00582233 /* NESSxROMCartridge.m in Sources */,
+				B96B196C122505E00096FEF6 /* NESTxROMCartridge.m in Sources */,
+				B91B201B122640A10066C2CB /* NESSUROMCartridge.m in Sources */,
+				B91FBEF6142BA5EA006A3040 /* NESiNES184Cartridge.m in Sources */,
+				B9ACB554142D37520054018C /* NESVRC2bCartridge.m in Sources */,
+				B92A4FF1142E6AF900BE811B /* NESVRC2aCartridge.m in Sources */,
+				B9809557142FADEF00195D48 /* NESVRC1Cartridge.m in Sources */,
+				B96DD5271538E92B00D3A9CC /* NESiNES068Cartridge.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Macifom_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = Macifom;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Macifom_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = Macifom;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Macifom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Macifom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
